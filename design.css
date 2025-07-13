@@ -534,6 +534,9 @@ h3.hello span{
 .contact .contact-form .form-item .btn{
     background: var(--bg-black-900);
 }
+.contact .contact-form .form-item {
+    text-align: center;
+}
 #end{
     text-align: center;
     line-height: 25px;
@@ -552,7 +555,7 @@ h3.hello span{
     }
 }
     .block{
-        animation: appear forwards;
+        animation: appear linear;
         animation-timeline: view();
         animation-range: entry 0% cover 30%;
 }
@@ -591,6 +594,9 @@ h3.hello span{
     .about .about-content .personal-info, .about .about-content .skills{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .about .about-content .personal-info .buttons .btn{
+        display: block;
     }
 }
 
