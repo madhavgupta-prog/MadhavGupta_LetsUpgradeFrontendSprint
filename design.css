@@ -17,6 +17,7 @@ body{
     line-height:1.5;
     font-size: 16px;
     font-family: 'Poppins' sans-serif;
+    overflow-x: hidden;
 }
 *{
     margin: 0;
@@ -32,7 +33,13 @@ ul{
     list-style: none;
 }
 .section{
-    background: var(--bg-black-900);
+    /* background: var(--bg-black-900); */
+    background-image: url('images/WhatsApp\ Image\ 2025-07-15\ at\ 13.45.09_461526b0.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(20px);
     min-height: 100vh;
     display: block;
     padding: 0 30px;
@@ -113,7 +120,12 @@ ul{
 /* ASIDE */
 .aside{
     width: 220px;
-    background: var(--bg-black-900);
+    /* background: var(--bg-black-900); */
+    background-image: url('images/WhatsApp\ Image\ 2025-07-15\ at\ 13.45.09_461526b0.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    backdrop-filter: blur(20px);
     position: fixed;
     padding: 30px;
     left: 0;
@@ -195,7 +207,7 @@ ul{
 }
 /* HOME */
 .main-content{
-    padding-left: 200px;
+    padding-left: 220px;
 }
 .home{
     min-height: 100vh;
@@ -428,9 +440,6 @@ h3.hello span{
     text-align: justify;
 }
 /* portfolio */
-.portfolio .container{
-    padding-bottom: 0px;
-}
 .portfolio .portfolio-heading{
     flex: 0 0 100%;
     max-width: 100%;
@@ -559,7 +568,7 @@ h3.hello span{
 }
 @media (max-width:1300px){
     .aside{
-        left: -270px;
+        left: -220px;
     }
     .main-content{
         padding-left: 0;
@@ -595,6 +604,14 @@ h3.hello span{
     }
     .about .about-content .personal-info .buttons .btn{
         display: block;
+    }
+}
+
+@media (max-width:500px) {
+    .home .home-img img{
+        height: 300px;
+        width: 250px;
+        margin: auto;
     }
 }
 
