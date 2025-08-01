@@ -463,7 +463,13 @@ h3.hello span{
 }
 .portfolio .portfolio-item .portfolio-item-inner .portfolio-img img{
     width: 100%;
+    height: 200px;
     display: block;
+}
+.portfolio .portfolio-item .portfolio-item-inner h3{
+    text-align: center;
+    color: var(--skin-color);
+    letter-spacing: 0.1rem;
 }
 .portfolio .portfolio-item .portfolio-item-inner:hover{
     transform: scale(1.1);
@@ -549,7 +555,7 @@ h3.hello span{
     line-height: 25px;
     font-size: 16px;
     color:var(--text-black-700);
-    background: var(--bg-black-50);
+    background: var(--bg-black-900);
 }
 @keyframes appear{
     from{
@@ -612,6 +618,10 @@ h3.hello span{
         height: 300px;
         width: 250px;
         margin: auto;
+    }
+    .portfolio .portfolio-item{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
